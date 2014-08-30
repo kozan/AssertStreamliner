@@ -33,6 +33,9 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeContractMessages.cs" />
+    <Compile Include="CodeContractViolationData.cs" />
+    <Compile Include="ICodeContractViolationNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

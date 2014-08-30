@@ -33,8 +33,14 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeContractViolationException.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="CodeContractMessages.cs" />
     <Compile Include="CodeContractViolationData.cs" />
+    <Compile Include="ExceptionNotifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ICodeContractViolationNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

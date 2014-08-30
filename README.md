@@ -9,6 +9,11 @@ Author
 Created by Piotr Kozanowski
 
 
+License
+=======
+Library licensed under the MIT License (MIT)
+
+
 Build Status
 ============
 [![Build Status](https://buildhive.cloudbees.com/job/kozan/job/AssertStreamliner/badge/icon)](https://buildhive.cloudbees.com/job/kozan/job/AssertStreamliner/)

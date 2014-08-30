@@ -8,8 +8,8 @@ namespace AssertStreamliner
 
 		public CodeContractViolationData(object value, string name, string errorMessage)
 		{
-			Debug.Assert(string.IsNullOrEmpty(name), string.Format(CodeContractMessages.CannotBeNullOrEmpty, "name"));
-			Debug.Assert(string.IsNullOrEmpty(errorMessage), string.Format(CodeContractMessages.CannotBeNullOrEmpty, "errorMessage"));
+			Debug.Assert(!string.IsNullOrEmpty(name), string.Format(CodeContractMessages.CannotBeNullOrEmpty, "name"));
+			Debug.Assert(!string.IsNullOrEmpty(errorMessage), string.Format(CodeContractMessages.CannotBeNullOrEmpty, "errorMessage"));
 
 			this.Value = value;
 			this.Name = name;

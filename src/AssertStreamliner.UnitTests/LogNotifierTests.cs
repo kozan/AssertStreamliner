@@ -41,7 +41,7 @@ namespace AssertStreamliner.UnitTests
 				//Arrange
 				var fakeLogger = A.Fake<ILogger>();
 				var notifier = new LogNotifier(fakeLogger);
-				var violationData = new CodeContractViolationData(null, "a", "a");
+				var violationData = TestDataFactory.CreateViolationData();
 
 
 				//Act
@@ -58,7 +58,7 @@ namespace AssertStreamliner.UnitTests
 				//Arrange
 				var fakeLogger = A.Fake<ILogger>();
 				var notifier = new LogNotifier(fakeLogger);
-				var violationData = new CodeContractViolationData(null, "a", "a");
+				var violationData = TestDataFactory.CreateViolationData();
 
 
 				//Act

@@ -40,6 +40,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestDataFactory.cs" />
     <Compile Include="ExceptionNotifierTests.cs" />
     <Compile Include="LogNotifierTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

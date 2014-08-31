@@ -18,7 +18,7 @@ namespace AssertStreamliner.UnitTests
 
 
 				//Act and assert
-				Assert.Throws<CodeContractViolationException>(() => notifier.Notify(ExceptionNotifierTests.GetViolationData()));
+				Assert.Throws<CodeContractViolationException>(() => notifier.Notify(TestDataFactory.CreateViolationData()));
 			}
 
 			[Fact]
@@ -30,7 +30,7 @@ namespace AssertStreamliner.UnitTests
 				
 
 				//Act
-				var exception = Assert.Throws<CodeContractViolationException>(() => notifier.Notify(ExceptionNotifierTests.GetViolationData(errorMessage: expectedErrorMessage)));
+				var exception = Assert.Throws<CodeContractViolationException>(() => notifier.Notify(TestDataFactory.CreateViolationData(errorMessage: expectedErrorMessage)));
 
 
 				//Assert
@@ -46,7 +46,7 @@ namespace AssertStreamliner.UnitTests
 
 
 				//Act
-				var exception = Assert.Throws<CodeContractViolationException>(() => notifier.Notify(ExceptionNotifierTests.GetViolationData(expectedValue)));
+				var exception = Assert.Throws<CodeContractViolationException>(() => notifier.Notify(TestDataFactory.CreateViolationData(expectedValue)));
 
 
 				//Assert
@@ -62,7 +62,7 @@ namespace AssertStreamliner.UnitTests
 
 
 				//Act
-				var exception = Assert.Throws<CodeContractViolationException>(() => notifier.Notify(ExceptionNotifierTests.GetViolationData(name: expectedName)));
+				var exception = Assert.Throws<CodeContractViolationException>(() => notifier.Notify(TestDataFactory.CreateViolationData(name: expectedName)));
 
 
 				//Assert
@@ -73,16 +73,5 @@ namespace AssertStreamliner.UnitTests
 		}
 
 		#endregion NotifyMethod
-
-		#region Helpers
-
-		private static CodeContractViolationData GetViolationData(object value = null, string name = "Name", string errorMessage = "ErrorMessage")
-		{
-			return new CodeContractViolationData(value, name, errorMessage);
-		}
-
-
-		#endregion Helpers
-
 	}
 }

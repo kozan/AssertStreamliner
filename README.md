@@ -18,4 +18,4 @@ Library licensed under the MIT License (MIT)
 
 Build Status (by [AppVeyor](https://ci.appveyor.com/))
 ===========================
-[![Build status](https://ci.appveyor.com/api/projects/status/yx4o6ye0t8sdaokp/branch/master)](https://ci.appveyor.com/project/kozan/assertstreamliner/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/jj62u1uhhkgcn3om/branch/master)](https://ci.appveyor.com/project/kozan/assertstreamliner/branch/master)

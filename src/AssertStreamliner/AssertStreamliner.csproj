@@ -38,6 +38,9 @@
     </Compile>
     <Compile Include="CodeContractMessages.cs" />
     <Compile Include="CodeContractViolationData.cs" />
+    <Compile Include="DebugAssertNotifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ExceptionNotifier.cs">
       <SubType>Code</SubType>
     </Compile>

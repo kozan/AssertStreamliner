@@ -42,10 +42,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DebugAssertNotifierTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="TestDataFactory.cs" />
     <Compile Include="ExceptionNotifierTests.cs" />
     <Compile Include="LogNotifierTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestTraceListner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
